@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-10-17T01:03:37.525361+00:00",
+  "scope": "Offline publication validation; no real model/API requests",
+  "tests": {
+    "tests_run": 145,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "network_blocked": true,
+    "credentials_removed": true,
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "all105_mock": {
+    "expected": 105,
+    "completed": 105,
+    "common_warmup_hashes": 1,
+    "common_demand_hashes": 1,
+    "agent_rows": 840
+  },
+  "frozen_executable_and_configuration_files_byte_identical": 50,
+  "original_manifest_files_verified": 64,
+  "markdown_file_links_missing": 0,
+  "documentation_examples": {
+    "powershell_blocks_syntax_passed": 11,
+    "single_condition_dry_run_passed": true,
+    "all105_dry_run_passed": true,
+    "six_condition_two_period_mock_passed": true
+  },
+  "publication_scan": {
+    "credential_like_tokens_detected": 0,
+    "personal_absolute_paths_detected": 0
+  },
+  "not_included": [
+    "credentials",
+    "raw results",
+    "API journals",
+    "local launch controls",
+    "caches"
+  ]
+}

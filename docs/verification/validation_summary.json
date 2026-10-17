@@ -1,0 +1,164 @@
+{
+  "revision": 4,
+  "purpose": "software and live-path validation; not statistical efficacy evidence",
+  "tests": {
+    "tests_run": 145,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "network_blocked": true,
+    "credentials_removed": true,
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "all105_mock": {
+    "expected": 105,
+    "completed": 105,
+    "common_warmup_hashes": 1,
+    "common_demand_hashes": 1,
+    "agent_rows": 840
+  },
+  "all105_independent_checks": {
+    "checks": 28276,
+    "failures": 0
+  },
+  "pilot_spec": {
+    "seed": 201,
+    "safety_stock": 10,
+    "initial_inventory": 0,
+    "warmup_periods": 30,
+    "evaluation_periods": 10,
+    "workers": 4,
+    "conditions": [
+      "A",
+      "C0M0T2",
+      "C0M2T2",
+      "C0M2T4",
+      "C3M2T2",
+      "N0",
+      "N0-G0"
+    ]
+  },
+  "r3_diagnostic": {
+    "episodes": 7,
+    "completed": 7,
+    "aborted": 0,
+    "api_attempts": 415,
+    "retry_attempts": 5,
+    "failed_attempts": 8,
+    "known_reported_cost_usd": 0.050503795000000004,
+    "missing_cost_attempts": 0,
+    "total_tokens": 968333,
+    "missing_token_attempts": 0,
+    "checks": 10778,
+    "check_failures": 0,
+    "m2": {
+      "logical_message_requests": 90,
+      "requests_with_retry": 5,
+      "committed_sender_opportunities": 90,
+      "forwarded_nonempty_messages": 87,
+      "empty_fallback_messages": 3,
+      "message_attempt_usage": {
+        "physical_attempts": 95,
+        "retry_attempts": 5,
+        "failed_attempts": 8,
+        "format_failure_attempts": 8,
+        "error_types": {
+          "ValidationError": 8
+        },
+        "input_tokens": {
+          "total": 271103,
+          "known_subtotal": 271103,
+          "reported_attempts": 95,
+          "missing_attempts": 0,
+          "coverage": 1.0
+        },
+        "output_tokens": {
+          "total": 3595,
+          "known_subtotal": 3595,
+          "reported_attempts": 95,
+          "missing_attempts": 0,
+          "coverage": 1.0
+        },
+        "total_tokens": {
+          "total": 274698,
+          "known_subtotal": 274698,
+          "reported_attempts": 95,
+          "missing_attempts": 0,
+          "coverage": 1.0
+        },
+        "reported_cost_usd": {
+          "total": 0.013790805,
+          "known_subtotal": 0.013790805,
+          "reported_attempts": 95,
+          "missing_attempts": 0,
+          "coverage": 1.0
+        }
+      },
+      "semantic_correctness": "Not established by this audit; message presence/format/retry/usage are operational counts."
+    }
+  },
+  "r4_final": {
+    "episodes": 7,
+    "completed": 7,
+    "aborted": 0,
+    "api_attempts": 416,
+    "retry_attempts": 6,
+    "failed_attempts": 6,
+    "known_reported_cost_usd": 0.05068682,
+    "missing_cost_attempts": 0,
+    "total_tokens": 972298,
+    "missing_token_attempts": 0,
+    "checks": 10784,
+    "check_failures": 0,
+    "m2": {
+      "logical_message_requests": 90,
+      "requests_with_retry": 5,
+      "committed_sender_opportunities": 90,
+      "forwarded_nonempty_messages": 90,
+      "empty_fallback_messages": 0,
+      "message_attempt_usage": {
+        "physical_attempts": 95,
+        "retry_attempts": 5,
+        "failed_attempts": 5,
+        "format_failure_attempts": 5,
+        "error_types": {
+          "ValidationError": 5
+        },
+        "input_tokens": {
+          "total": 271458,
+          "known_subtotal": 271458,
+          "reported_attempts": 95,
+          "missing_attempts": 0,
+          "coverage": 1.0
+        },
+        "output_tokens": {
+          "total": 3649,
+          "known_subtotal": 3649,
+          "reported_attempts": 95,
+          "missing_attempts": 0,
+          "coverage": 1.0
+        },
+        "total_tokens": {
+          "total": 275107,
+          "known_subtotal": 275107,
+          "reported_attempts": 95,
+          "missing_attempts": 0,
+          "coverage": 1.0
+        },
+        "reported_cost_usd": {
+          "total": 0.014083055,
+          "known_subtotal": 0.014083055,
+          "reported_attempts": 95,
+          "missing_attempts": 0,
+          "coverage": 1.0
+        }
+      },
+      "semantic_correctness": "Not established by this audit; message presence/format/retry/usage are operational counts."
+    }
+  },
+  "r4_elapsed_seconds": 155.0600512002129,
+  "runtime_unchanged_during_pilot": true,
+  "combined_known_reported_api_cost_usd": 0.10119061500000001,
+  "original_seed201_results_unchanged": true
+}

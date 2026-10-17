@@ -1,0 +1,1561 @@
+[
+  {
+    "condition": "A",
+    "seed": 201,
+    "objective": "cost",
+    "status": "completed",
+    "complete": true,
+    "source_hash": "fd3e7d81a74b3bf45463cb9d2d862cebc1cdf6f8d6f25587ff320b42500ba9b2",
+    "metrics": {
+      "status": "completed",
+      "periods_evaluated": 10,
+      "evaluation_start": 31,
+      "evaluation_end": 40,
+      "agent_periods": 40,
+      "total_cost": 860.0,
+      "cost_per_period": 86.0,
+      "cost_components": {
+        "holding_cost": 412.0,
+        "backlog_cost": 32.0,
+        "variable_order_cost": 379.0,
+        "fixed_order_cost": 37.0
+      },
+      "cost_components_per_period": {
+        "holding_cost": 41.2,
+        "backlog_cost": 3.2,
+        "variable_order_cost": 37.9,
+        "fixed_order_cost": 3.7
+      },
+      "retailer_immediate_fill_rate": 1.0,
+      "retailer_total_new_demand": 90.0,
+      "retailer_total_immediate_filled": 90.0,
+      "order_cv_i": {
+        "retailer": 0.21533032936457214,
+        "wholesaler": 0.10141204714840943,
+        "distributor": 0.3530573116489814,
+        "factory": 0.5329424706034902
+      },
+      "global_bullwhip": 0.004108850077995302,
+      "order_cv_ddof": 1,
+      "global_bullwhip_definition": "product_of_four_sample_final_order_CVs",
+      "decision_latency_ms": {
+        "mean": 1073.2963600137737,
+        "median": 1040.4885000316426,
+        "p95": 1310.201634943951,
+        "observed_decisions": 40,
+        "total_decisions": 40
+      },
+      "fallback_count": 0,
+      "fallback_decisions": 0,
+      "fallback_decision_rate": 0.0,
+      "fallback_by_stage": {
+        "forecast": 0,
+        "order": 0,
+        "message": 0
+      },
+      "correction_count": 0,
+      "replayed_decisions": 0,
+      "arithmetic_error_count": 0,
+      "arithmetic_error_decisions": 0,
+      "forecast_method_counts": {},
+      "llm_selection_counts": {},
+      "mean_absolute_order_adjustment": null,
+      "order_adjustment_observations": 0,
+      "mean_inventory_per_agent_period": 10.3,
+      "mean_backlog_per_agent_period": 0.8,
+      "terminal_state": {
+        "retailer": {
+          "I": 20,
+          "B": 0,
+          "P_pre": 11,
+          "P_post": 20
+        },
+        "wholesaler": {
+          "I": 12,
+          "B": 0,
+          "P_pre": 16,
+          "P_post": 26
+        },
+        "distributor": {
+          "I": 0,
+          "B": 6,
+          "P_pre": 11,
+          "P_post": 21
+        },
+        "factory": {
+          "I": 0,
+          "B": 2,
+          "P_pre": 11,
+          "P_post": 23
+        }
+      },
+      "usage_by_task": {
+        "order": {
+          "api_calls": 40,
+          "input_tokens": 84424,
+          "known_input_tokens_sum": 84424,
+          "input_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 3506,
+          "known_output_tokens_sum": 3506,
+          "output_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 87930,
+          "known_total_tokens_sum": 87930,
+          "total_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.0049224,
+          "known_reported_cost_usd_sum": 0.0049224,
+          "reported_cost_usd_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 0,
+          "format_failure_count": 0,
+          "failed_attempt_count": 0,
+          "error_types": {},
+          "api_latency_seconds_sum": 42.67794880038127,
+          "known_api_latency_seconds_sum": 42.67794880038127
+        }
+      },
+      "api_calls": 40,
+      "input_tokens": 84424,
+      "known_input_tokens_sum": 84424,
+      "input_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "output_tokens": 3506,
+      "known_output_tokens_sum": 3506,
+      "output_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "total_tokens": 87930,
+      "known_total_tokens_sum": 87930,
+      "total_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reasoning_tokens": 0,
+      "known_reasoning_tokens_sum": 0,
+      "reasoning_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reported_cost_usd": 0.0049224,
+      "known_reported_cost_usd_sum": 0.0049224,
+      "reported_cost_usd_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "retry_count": 0,
+      "format_failure_count": 0,
+      "failed_attempt_count": 0,
+      "error_types": {},
+      "api_latency_seconds_sum": 42.67794880038127,
+      "known_api_latency_seconds_sum": 42.67794880038127,
+      "retry_decision_rate": 0.0
+    }
+  },
+  {
+    "condition": "C0M0T2",
+    "seed": 201,
+    "objective": "cost",
+    "status": "completed",
+    "complete": true,
+    "source_hash": "fd3e7d81a74b3bf45463cb9d2d862cebc1cdf6f8d6f25587ff320b42500ba9b2",
+    "metrics": {
+      "status": "completed",
+      "periods_evaluated": 10,
+      "evaluation_start": 31,
+      "evaluation_end": 40,
+      "agent_periods": 40,
+      "total_cost": 961.0,
+      "cost_per_period": 96.1,
+      "cost_components": {
+        "holding_cost": 570.0,
+        "backlog_cost": 4.0,
+        "variable_order_cost": 355.0,
+        "fixed_order_cost": 32.0
+      },
+      "cost_components_per_period": {
+        "holding_cost": 57.0,
+        "backlog_cost": 0.4,
+        "variable_order_cost": 35.5,
+        "fixed_order_cost": 3.2
+      },
+      "retailer_immediate_fill_rate": 1.0,
+      "retailer_total_new_demand": 90.0,
+      "retailer_total_immediate_filled": 90.0,
+      "order_cv_i": {
+        "retailer": 0.4049449564277306,
+        "wholesaler": 0.6855955967726525,
+        "distributor": 0.8208430345806992,
+        "factory": 1.0383589458426803
+      },
+      "global_bullwhip": 0.2366310005163765,
+      "order_cv_ddof": 1,
+      "global_bullwhip_definition": "product_of_four_sample_final_order_CVs",
+      "decision_latency_ms": {
+        "mean": 1065.5518174811732,
+        "median": 1049.299699952826,
+        "p95": 1320.7871849765068,
+        "observed_decisions": 40,
+        "total_decisions": 40
+      },
+      "fallback_count": 0,
+      "fallback_decisions": 0,
+      "fallback_decision_rate": 0.0,
+      "fallback_by_stage": {
+        "forecast": 0,
+        "order": 0,
+        "message": 0
+      },
+      "correction_count": 33,
+      "replayed_decisions": 0,
+      "arithmetic_error_count": 0,
+      "arithmetic_error_decisions": 0,
+      "forecast_method_counts": {
+        "linear_regression": 40
+      },
+      "llm_selection_counts": {},
+      "mean_absolute_order_adjustment": 0.25,
+      "order_adjustment_observations": 40,
+      "mean_inventory_per_agent_period": 14.25,
+      "mean_backlog_per_agent_period": 0.1,
+      "terminal_state": {
+        "retailer": {
+          "I": 10,
+          "B": 0,
+          "P_pre": 11,
+          "P_post": 20
+        },
+        "wholesaler": {
+          "I": 10,
+          "B": 0,
+          "P_pre": 11,
+          "P_post": 20
+        },
+        "distributor": {
+          "I": 11,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 19
+        },
+        "factory": {
+          "I": 14,
+          "B": 0,
+          "P_pre": 7,
+          "P_post": 17
+        }
+      },
+      "usage_by_task": {
+        "order": {
+          "api_calls": 40,
+          "input_tokens": 106673,
+          "known_input_tokens_sum": 106673,
+          "input_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 3741,
+          "known_output_tokens_sum": 3741,
+          "output_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 110414,
+          "known_total_tokens_sum": 110414,
+          "total_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.00608185,
+          "known_reported_cost_usd_sum": 0.00608185,
+          "reported_cost_usd_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 0,
+          "format_failure_count": 0,
+          "failed_attempt_count": 0,
+          "error_types": {},
+          "api_latency_seconds_sum": 42.42596570029855,
+          "known_api_latency_seconds_sum": 42.42596570029855
+        }
+      },
+      "api_calls": 40,
+      "input_tokens": 106673,
+      "known_input_tokens_sum": 106673,
+      "input_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "output_tokens": 3741,
+      "known_output_tokens_sum": 3741,
+      "output_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "total_tokens": 110414,
+      "known_total_tokens_sum": 110414,
+      "total_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reasoning_tokens": 0,
+      "known_reasoning_tokens_sum": 0,
+      "reasoning_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reported_cost_usd": 0.00608185,
+      "known_reported_cost_usd_sum": 0.00608185,
+      "reported_cost_usd_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "retry_count": 0,
+      "format_failure_count": 0,
+      "failed_attempt_count": 0,
+      "error_types": {},
+      "api_latency_seconds_sum": 42.42596570029855,
+      "known_api_latency_seconds_sum": 42.42596570029855,
+      "retry_decision_rate": 0.0
+    }
+  },
+  {
+    "condition": "C0M2T2",
+    "seed": 201,
+    "objective": "cost",
+    "status": "completed",
+    "complete": true,
+    "source_hash": "fd3e7d81a74b3bf45463cb9d2d862cebc1cdf6f8d6f25587ff320b42500ba9b2",
+    "metrics": {
+      "status": "completed",
+      "periods_evaluated": 10,
+      "evaluation_start": 31,
+      "evaluation_end": 40,
+      "agent_periods": 40,
+      "total_cost": 970.0,
+      "cost_per_period": 97.0,
+      "cost_components": {
+        "holding_cost": 577.0,
+        "backlog_cost": 4.0,
+        "variable_order_cost": 354.0,
+        "fixed_order_cost": 35.0
+      },
+      "cost_components_per_period": {
+        "holding_cost": 57.7,
+        "backlog_cost": 0.4,
+        "variable_order_cost": 35.4,
+        "fixed_order_cost": 3.5
+      },
+      "retailer_immediate_fill_rate": 1.0,
+      "retailer_total_new_demand": 90.0,
+      "retailer_total_immediate_filled": 90.0,
+      "order_cv_i": {
+        "retailer": 0.4049449564277306,
+        "wholesaler": 0.5076322899318471,
+        "distributor": 0.6792882354987846,
+        "factory": 0.9332533736737366
+      },
+      "global_bullwhip": 0.13031634634526176,
+      "order_cv_ddof": 1,
+      "global_bullwhip_definition": "product_of_four_sample_final_order_CVs",
+      "decision_latency_ms": {
+        "mean": 1829.3374050001148,
+        "median": 1906.2672998989,
+        "p95": 2276.133465149905,
+        "observed_decisions": 40,
+        "total_decisions": 40
+      },
+      "fallback_count": 0,
+      "fallback_decisions": 0,
+      "fallback_decision_rate": 0.0,
+      "fallback_by_stage": {
+        "forecast": 0,
+        "order": 0,
+        "message": 0
+      },
+      "correction_count": 35,
+      "replayed_decisions": 0,
+      "arithmetic_error_count": 0,
+      "arithmetic_error_decisions": 0,
+      "forecast_method_counts": {
+        "linear_regression": 40
+      },
+      "llm_selection_counts": {},
+      "mean_absolute_order_adjustment": 0.15,
+      "order_adjustment_observations": 40,
+      "mean_inventory_per_agent_period": 14.425,
+      "mean_backlog_per_agent_period": 0.1,
+      "terminal_state": {
+        "retailer": {
+          "I": 10,
+          "B": 0,
+          "P_pre": 11,
+          "P_post": 20
+        },
+        "wholesaler": {
+          "I": 10,
+          "B": 0,
+          "P_pre": 11,
+          "P_post": 20
+        },
+        "distributor": {
+          "I": 11,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 19
+        },
+        "factory": {
+          "I": 14,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 16
+        }
+      },
+      "usage_by_task": {
+        "message": {
+          "api_calls": 31,
+          "input_tokens": 88663,
+          "known_input_tokens_sum": 88663,
+          "input_tokens_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 1196,
+          "known_output_tokens_sum": 1196,
+          "output_tokens_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 89859,
+          "known_total_tokens_sum": 89859,
+          "total_tokens_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.0046723500000000005,
+          "known_reported_cost_usd_sum": 0.0046723500000000005,
+          "reported_cost_usd_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 1,
+          "format_failure_count": 1,
+          "failed_attempt_count": 1,
+          "error_types": {
+            "ValidationError": 1
+          },
+          "api_latency_seconds_sum": 28.757717200554907,
+          "known_api_latency_seconds_sum": 28.757717200554907
+        },
+        "order": {
+          "api_calls": 40,
+          "input_tokens": 109633,
+          "known_input_tokens_sum": 109633,
+          "input_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 3458,
+          "known_output_tokens_sum": 3458,
+          "output_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 113091,
+          "known_total_tokens_sum": 113091,
+          "total_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.00530331,
+          "known_reported_cost_usd_sum": 0.00530331,
+          "reported_cost_usd_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 0,
+          "format_failure_count": 0,
+          "failed_attempt_count": 0,
+          "error_types": {},
+          "api_latency_seconds_sum": 42.95771090104245,
+          "known_api_latency_seconds_sum": 42.95771090104245
+        }
+      },
+      "api_calls": 71,
+      "input_tokens": 198296,
+      "known_input_tokens_sum": 198296,
+      "input_tokens_availability": {
+        "reported_calls": 71,
+        "total_calls": 71,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "output_tokens": 4654,
+      "known_output_tokens_sum": 4654,
+      "output_tokens_availability": {
+        "reported_calls": 71,
+        "total_calls": 71,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "total_tokens": 202950,
+      "known_total_tokens_sum": 202950,
+      "total_tokens_availability": {
+        "reported_calls": 71,
+        "total_calls": 71,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reasoning_tokens": 0,
+      "known_reasoning_tokens_sum": 0,
+      "reasoning_tokens_availability": {
+        "reported_calls": 71,
+        "total_calls": 71,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reported_cost_usd": 0.00997566,
+      "known_reported_cost_usd_sum": 0.00997566,
+      "reported_cost_usd_availability": {
+        "reported_calls": 71,
+        "total_calls": 71,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "retry_count": 1,
+      "format_failure_count": 1,
+      "failed_attempt_count": 1,
+      "error_types": {
+        "ValidationError": 1
+      },
+      "api_latency_seconds_sum": 71.71542810159735,
+      "known_api_latency_seconds_sum": 71.71542810159735,
+      "retry_decision_rate": 0.025
+    }
+  },
+  {
+    "condition": "C0M2T4",
+    "seed": 201,
+    "objective": "cost",
+    "status": "completed",
+    "complete": true,
+    "source_hash": "fd3e7d81a74b3bf45463cb9d2d862cebc1cdf6f8d6f25587ff320b42500ba9b2",
+    "metrics": {
+      "status": "completed",
+      "periods_evaluated": 10,
+      "evaluation_start": 31,
+      "evaluation_end": 40,
+      "agent_periods": 40,
+      "total_cost": 1082.0,
+      "cost_per_period": 108.2,
+      "cost_components": {
+        "holding_cost": 628.0,
+        "backlog_cost": 61.0,
+        "variable_order_cost": 370.0,
+        "fixed_order_cost": 23.0
+      },
+      "cost_components_per_period": {
+        "holding_cost": 62.8,
+        "backlog_cost": 6.1,
+        "variable_order_cost": 37.0,
+        "fixed_order_cost": 2.3
+      },
+      "retailer_immediate_fill_rate": 1.0,
+      "retailer_total_new_demand": 90.0,
+      "retailer_total_immediate_filled": 90.0,
+      "order_cv_i": {
+        "retailer": 0.5908825804722215,
+        "wholesaler": 1.0777829844714386,
+        "distributor": 1.4749613379316626,
+        "factory": 1.7368128101993558
+      },
+      "global_bullwhip": 1.6314214199167738,
+      "order_cv_ddof": 1,
+      "global_bullwhip_definition": "product_of_four_sample_final_order_CVs",
+      "decision_latency_ms": {
+        "mean": 2777.122567500919,
+        "median": 2816.571850096807,
+        "p95": 4224.267820024396,
+        "observed_decisions": 40,
+        "total_decisions": 40
+      },
+      "fallback_count": 0,
+      "fallback_decisions": 0,
+      "fallback_decision_rate": 0.0,
+      "fallback_by_stage": {
+        "forecast": 0,
+        "order": 0,
+        "message": 0
+      },
+      "correction_count": 25,
+      "replayed_decisions": 0,
+      "arithmetic_error_count": 0,
+      "arithmetic_error_decisions": 0,
+      "forecast_method_counts": {
+        "linear_regression": 26,
+        "moving_average_30": 14
+      },
+      "llm_selection_counts": {
+        "linear_regression": 26,
+        "moving_average_30": 14
+      },
+      "mean_absolute_order_adjustment": 0.725,
+      "order_adjustment_observations": 40,
+      "mean_inventory_per_agent_period": 15.7,
+      "mean_backlog_per_agent_period": 1.525,
+      "terminal_state": {
+        "retailer": {
+          "I": 9,
+          "B": 0,
+          "P_pre": 12,
+          "P_post": 21
+        },
+        "wholesaler": {
+          "I": 15,
+          "B": 0,
+          "P_pre": 6,
+          "P_post": 15
+        },
+        "distributor": {
+          "I": 31,
+          "B": 0,
+          "P_pre": 0,
+          "P_post": 0
+        },
+        "factory": {
+          "I": 44,
+          "B": 0,
+          "P_pre": 0,
+          "P_post": 0
+        }
+      },
+      "usage_by_task": {
+        "message": {
+          "api_calls": 31,
+          "input_tokens": 88857,
+          "known_input_tokens_sum": 88857,
+          "input_tokens_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 1221,
+          "known_output_tokens_sum": 1221,
+          "output_tokens_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 90078,
+          "known_total_tokens_sum": 90078,
+          "total_tokens_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 2,
+          "known_reasoning_tokens_sum": 2,
+          "reasoning_tokens_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.004511415,
+          "known_reported_cost_usd_sum": 0.004511415,
+          "reported_cost_usd_availability": {
+            "reported_calls": 31,
+            "total_calls": 31,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 1,
+          "format_failure_count": 1,
+          "failed_attempt_count": 1,
+          "error_types": {
+            "ValidationError": 1
+          },
+          "api_latency_seconds_sum": 28.9494127004873,
+          "known_api_latency_seconds_sum": 28.9494127004873
+        },
+        "order": {
+          "api_calls": 40,
+          "input_tokens": 109679,
+          "known_input_tokens_sum": 109679,
+          "input_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 3340,
+          "known_output_tokens_sum": 3340,
+          "output_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 113019,
+          "known_total_tokens_sum": 113019,
+          "total_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.00545481,
+          "known_reported_cost_usd_sum": 0.00545481,
+          "reported_cost_usd_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 0,
+          "format_failure_count": 0,
+          "failed_attempt_count": 0,
+          "error_types": {},
+          "api_latency_seconds_sum": 45.99071009969339,
+          "known_api_latency_seconds_sum": 45.99071009969339
+        },
+        "select": {
+          "api_calls": 40,
+          "input_tokens": 89403,
+          "known_input_tokens_sum": 89403,
+          "input_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 416,
+          "known_output_tokens_sum": 416,
+          "output_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 89819,
+          "known_total_tokens_sum": 89819,
+          "total_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.00455335,
+          "known_reported_cost_usd_sum": 0.00455335,
+          "reported_cost_usd_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 0,
+          "format_failure_count": 0,
+          "failed_attempt_count": 0,
+          "error_types": {},
+          "api_latency_seconds_sum": 34.39776180032641,
+          "known_api_latency_seconds_sum": 34.39776180032641
+        }
+      },
+      "api_calls": 111,
+      "input_tokens": 287939,
+      "known_input_tokens_sum": 287939,
+      "input_tokens_availability": {
+        "reported_calls": 111,
+        "total_calls": 111,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "output_tokens": 4977,
+      "known_output_tokens_sum": 4977,
+      "output_tokens_availability": {
+        "reported_calls": 111,
+        "total_calls": 111,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "total_tokens": 292916,
+      "known_total_tokens_sum": 292916,
+      "total_tokens_availability": {
+        "reported_calls": 111,
+        "total_calls": 111,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reasoning_tokens": 2,
+      "known_reasoning_tokens_sum": 2,
+      "reasoning_tokens_availability": {
+        "reported_calls": 111,
+        "total_calls": 111,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reported_cost_usd": 0.014519575,
+      "known_reported_cost_usd_sum": 0.014519575,
+      "reported_cost_usd_availability": {
+        "reported_calls": 111,
+        "total_calls": 111,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "retry_count": 1,
+      "format_failure_count": 1,
+      "failed_attempt_count": 1,
+      "error_types": {
+        "ValidationError": 1
+      },
+      "api_latency_seconds_sum": 109.3378846005071,
+      "known_api_latency_seconds_sum": 109.3378846005071,
+      "retry_decision_rate": 0.025
+    }
+  },
+  {
+    "condition": "C3M2T2",
+    "seed": 201,
+    "objective": "cost",
+    "status": "completed",
+    "complete": true,
+    "source_hash": "fd3e7d81a74b3bf45463cb9d2d862cebc1cdf6f8d6f25587ff320b42500ba9b2",
+    "metrics": {
+      "status": "completed",
+      "periods_evaluated": 10,
+      "evaluation_start": 31,
+      "evaluation_end": 40,
+      "agent_periods": 40,
+      "total_cost": 997.0,
+      "cost_per_period": 99.7,
+      "cost_components": {
+        "holding_cost": 603.0,
+        "backlog_cost": 9.0,
+        "variable_order_cost": 354.0,
+        "fixed_order_cost": 31.0
+      },
+      "cost_components_per_period": {
+        "holding_cost": 60.3,
+        "backlog_cost": 0.9,
+        "variable_order_cost": 35.4,
+        "fixed_order_cost": 3.1
+      },
+      "retailer_immediate_fill_rate": 1.0,
+      "retailer_total_new_demand": 90.0,
+      "retailer_total_immediate_filled": 90.0,
+      "order_cv_i": {
+        "retailer": 0.46008000416709915,
+        "wholesaler": 0.6534502622075098,
+        "distributor": 0.853408334341754,
+        "factory": 0.8365569095180753
+      },
+      "global_bullwhip": 0.21463387457685468,
+      "order_cv_ddof": 1,
+      "global_bullwhip_definition": "product_of_four_sample_final_order_CVs",
+      "decision_latency_ms": {
+        "mean": 1983.462717483053,
+        "median": 1963.238999946043,
+        "p95": 3903.4129951731297,
+        "observed_decisions": 40,
+        "total_decisions": 40
+      },
+      "fallback_count": 0,
+      "fallback_decisions": 0,
+      "fallback_decision_rate": 0.0,
+      "fallback_by_stage": {
+        "forecast": 0,
+        "order": 0,
+        "message": 0
+      },
+      "correction_count": 33,
+      "replayed_decisions": 0,
+      "arithmetic_error_count": 0,
+      "arithmetic_error_decisions": 0,
+      "forecast_method_counts": {
+        "linear_regression": 40
+      },
+      "llm_selection_counts": {},
+      "mean_absolute_order_adjustment": 1.0,
+      "order_adjustment_observations": 40,
+      "mean_inventory_per_agent_period": 15.075,
+      "mean_backlog_per_agent_period": 0.225,
+      "terminal_state": {
+        "retailer": {
+          "I": 10,
+          "B": 0,
+          "P_pre": 11,
+          "P_post": 20
+        },
+        "wholesaler": {
+          "I": 10,
+          "B": 0,
+          "P_pre": 11,
+          "P_post": 20
+        },
+        "distributor": {
+          "I": 10,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 20
+        },
+        "factory": {
+          "I": 14,
+          "B": 0,
+          "P_pre": 6,
+          "P_post": 16
+        }
+      },
+      "usage_by_task": {
+        "message": {
+          "api_calls": 33,
+          "input_tokens": 93938,
+          "known_input_tokens_sum": 93938,
+          "input_tokens_availability": {
+            "reported_calls": 33,
+            "total_calls": 33,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 1232,
+          "known_output_tokens_sum": 1232,
+          "output_tokens_availability": {
+            "reported_calls": 33,
+            "total_calls": 33,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 95170,
+          "known_total_tokens_sum": 95170,
+          "total_tokens_availability": {
+            "reported_calls": 33,
+            "total_calls": 33,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 33,
+            "total_calls": 33,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.00489929,
+          "known_reported_cost_usd_sum": 0.00489929,
+          "reported_cost_usd_availability": {
+            "reported_calls": 33,
+            "total_calls": 33,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 3,
+          "format_failure_count": 3,
+          "failed_attempt_count": 3,
+          "error_types": {
+            "ValidationError": 3
+          },
+          "api_latency_seconds_sum": 30.141650100471452,
+          "known_api_latency_seconds_sum": 30.141650100471452
+        },
+        "order": {
+          "api_calls": 41,
+          "input_tokens": 112210,
+          "known_input_tokens_sum": 112210,
+          "input_tokens_availability": {
+            "reported_calls": 41,
+            "total_calls": 41,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 3807,
+          "known_output_tokens_sum": 3807,
+          "output_tokens_availability": {
+            "reported_calls": 41,
+            "total_calls": 41,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 116017,
+          "known_total_tokens_sum": 116017,
+          "total_tokens_availability": {
+            "reported_calls": 41,
+            "total_calls": 41,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 41,
+            "total_calls": 41,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.006154145,
+          "known_reported_cost_usd_sum": 0.006154145,
+          "reported_cost_usd_availability": {
+            "reported_calls": 41,
+            "total_calls": 41,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 1,
+          "format_failure_count": 1,
+          "failed_attempt_count": 1,
+          "error_types": {
+            "ValidationError": 1
+          },
+          "api_latency_seconds_sum": 44.673935300670564,
+          "known_api_latency_seconds_sum": 44.673935300670564
+        }
+      },
+      "api_calls": 74,
+      "input_tokens": 206148,
+      "known_input_tokens_sum": 206148,
+      "input_tokens_availability": {
+        "reported_calls": 74,
+        "total_calls": 74,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "output_tokens": 5039,
+      "known_output_tokens_sum": 5039,
+      "output_tokens_availability": {
+        "reported_calls": 74,
+        "total_calls": 74,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "total_tokens": 211187,
+      "known_total_tokens_sum": 211187,
+      "total_tokens_availability": {
+        "reported_calls": 74,
+        "total_calls": 74,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reasoning_tokens": 0,
+      "known_reasoning_tokens_sum": 0,
+      "reasoning_tokens_availability": {
+        "reported_calls": 74,
+        "total_calls": 74,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reported_cost_usd": 0.011053435,
+      "known_reported_cost_usd_sum": 0.011053435,
+      "reported_cost_usd_availability": {
+        "reported_calls": 74,
+        "total_calls": 74,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "retry_count": 4,
+      "format_failure_count": 4,
+      "failed_attempt_count": 4,
+      "error_types": {
+        "ValidationError": 4
+      },
+      "api_latency_seconds_sum": 74.81558540114202,
+      "known_api_latency_seconds_sum": 74.81558540114202,
+      "retry_decision_rate": 0.1
+    }
+  },
+  {
+    "condition": "N0",
+    "seed": 201,
+    "objective": "cost",
+    "status": "completed",
+    "complete": true,
+    "source_hash": "fd3e7d81a74b3bf45463cb9d2d862cebc1cdf6f8d6f25587ff320b42500ba9b2",
+    "metrics": {
+      "status": "completed",
+      "periods_evaluated": 10,
+      "evaluation_start": 31,
+      "evaluation_end": 40,
+      "agent_periods": 40,
+      "total_cost": 975.0,
+      "cost_per_period": 97.5,
+      "cost_components": {
+        "holding_cost": 537.0,
+        "backlog_cost": 0.0,
+        "variable_order_cost": 399.0,
+        "fixed_order_cost": 39.0
+      },
+      "cost_components_per_period": {
+        "holding_cost": 53.7,
+        "backlog_cost": 0.0,
+        "variable_order_cost": 39.9,
+        "fixed_order_cost": 3.9
+      },
+      "retailer_immediate_fill_rate": 1.0,
+      "retailer_total_new_demand": 90.0,
+      "retailer_total_immediate_filled": 90.0,
+      "order_cv_i": {
+        "retailer": 0.2229708343300115,
+        "wholesaler": 0.06200544431702705,
+        "distributor": 0.0,
+        "factory": 0.408248290463863
+      },
+      "global_bullwhip": 0.0,
+      "order_cv_ddof": 1,
+      "global_bullwhip_definition": "product_of_four_sample_final_order_CVs",
+      "decision_latency_ms": {
+        "mean": 1016.6551599861123,
+        "median": 1008.3075000438839,
+        "p95": 1151.7376299365424,
+        "observed_decisions": 40,
+        "total_decisions": 40
+      },
+      "fallback_count": 0,
+      "fallback_decisions": 0,
+      "fallback_decision_rate": 0.0,
+      "fallback_by_stage": {
+        "forecast": 0,
+        "order": 0,
+        "message": 0
+      },
+      "correction_count": 0,
+      "replayed_decisions": 0,
+      "arithmetic_error_count": 0,
+      "arithmetic_error_decisions": 0,
+      "forecast_method_counts": {},
+      "llm_selection_counts": {},
+      "mean_absolute_order_adjustment": null,
+      "order_adjustment_observations": 0,
+      "mean_inventory_per_agent_period": 13.425,
+      "mean_backlog_per_agent_period": 0.0,
+      "terminal_state": {
+        "retailer": {
+          "I": 19,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 19
+        },
+        "wholesaler": {
+          "I": 16,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 20
+        },
+        "distributor": {
+          "I": 8,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 20
+        },
+        "factory": {
+          "I": 19,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 10
+        }
+      },
+      "usage_by_task": {
+        "order": {
+          "api_calls": 40,
+          "input_tokens": 30821,
+          "known_input_tokens_sum": 30821,
+          "input_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 2610,
+          "known_output_tokens_sum": 2610,
+          "output_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 33431,
+          "known_total_tokens_sum": 33431,
+          "total_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.00206305,
+          "known_reported_cost_usd_sum": 0.00206305,
+          "reported_cost_usd_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 0,
+          "format_failure_count": 0,
+          "failed_attempt_count": 0,
+          "error_types": {},
+          "api_latency_seconds_sum": 40.43449340085499,
+          "known_api_latency_seconds_sum": 40.43449340085499
+        }
+      },
+      "api_calls": 40,
+      "input_tokens": 30821,
+      "known_input_tokens_sum": 30821,
+      "input_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "output_tokens": 2610,
+      "known_output_tokens_sum": 2610,
+      "output_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "total_tokens": 33431,
+      "known_total_tokens_sum": 33431,
+      "total_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reasoning_tokens": 0,
+      "known_reasoning_tokens_sum": 0,
+      "reasoning_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reported_cost_usd": 0.00206305,
+      "known_reported_cost_usd_sum": 0.00206305,
+      "reported_cost_usd_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "retry_count": 0,
+      "format_failure_count": 0,
+      "failed_attempt_count": 0,
+      "error_types": {},
+      "api_latency_seconds_sum": 40.43449340085499,
+      "known_api_latency_seconds_sum": 40.43449340085499,
+      "retry_decision_rate": 0.0
+    }
+  },
+  {
+    "condition": "N0-G0",
+    "seed": 201,
+    "objective": "cost",
+    "status": "completed",
+    "complete": true,
+    "source_hash": "fd3e7d81a74b3bf45463cb9d2d862cebc1cdf6f8d6f25587ff320b42500ba9b2",
+    "metrics": {
+      "status": "completed",
+      "periods_evaluated": 10,
+      "evaluation_start": 31,
+      "evaluation_end": 40,
+      "agent_periods": 40,
+      "total_cost": 975.0,
+      "cost_per_period": 97.5,
+      "cost_components": {
+        "holding_cost": 537.0,
+        "backlog_cost": 0.0,
+        "variable_order_cost": 399.0,
+        "fixed_order_cost": 39.0
+      },
+      "cost_components_per_period": {
+        "holding_cost": 53.7,
+        "backlog_cost": 0.0,
+        "variable_order_cost": 39.9,
+        "fixed_order_cost": 3.9
+      },
+      "retailer_immediate_fill_rate": 1.0,
+      "retailer_total_new_demand": 90.0,
+      "retailer_total_immediate_filled": 90.0,
+      "order_cv_i": {
+        "retailer": 0.2229708343300115,
+        "wholesaler": 0.06200544431702705,
+        "distributor": 0.0,
+        "factory": 0.408248290463863
+      },
+      "global_bullwhip": 0.0,
+      "order_cv_ddof": 1,
+      "global_bullwhip_definition": "product_of_four_sample_final_order_CVs",
+      "decision_latency_ms": {
+        "mean": 999.5536074973643,
+        "median": 998.8578001502901,
+        "p95": 1145.5630949698389,
+        "observed_decisions": 40,
+        "total_decisions": 40
+      },
+      "fallback_count": 0,
+      "fallback_decisions": 0,
+      "fallback_decision_rate": 0.0,
+      "fallback_by_stage": {
+        "forecast": 0,
+        "order": 0,
+        "message": 0
+      },
+      "correction_count": 0,
+      "replayed_decisions": 0,
+      "arithmetic_error_count": 0,
+      "arithmetic_error_decisions": 0,
+      "forecast_method_counts": {},
+      "llm_selection_counts": {},
+      "mean_absolute_order_adjustment": null,
+      "order_adjustment_observations": 0,
+      "mean_inventory_per_agent_period": 13.425,
+      "mean_backlog_per_agent_period": 0.0,
+      "terminal_state": {
+        "retailer": {
+          "I": 19,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 19
+        },
+        "wholesaler": {
+          "I": 16,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 20
+        },
+        "distributor": {
+          "I": 8,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 20
+        },
+        "factory": {
+          "I": 19,
+          "B": 0,
+          "P_pre": 10,
+          "P_post": 10
+        }
+      },
+      "usage_by_task": {
+        "order": {
+          "api_calls": 40,
+          "input_tokens": 30821,
+          "known_input_tokens_sum": 30821,
+          "input_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "output_tokens": 2649,
+          "known_output_tokens_sum": 2649,
+          "output_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "total_tokens": 33470,
+          "known_total_tokens_sum": 33470,
+          "total_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reasoning_tokens": 0,
+          "known_reasoning_tokens_sum": 0,
+          "reasoning_tokens_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "reported_cost_usd": 0.00207085,
+          "known_reported_cost_usd_sum": 0.00207085,
+          "reported_cost_usd_availability": {
+            "reported_calls": 40,
+            "total_calls": 40,
+            "missing_calls": 0,
+            "fraction": 1.0
+          },
+          "retry_count": 0,
+          "format_failure_count": 0,
+          "failed_attempt_count": 0,
+          "error_types": {},
+          "api_latency_seconds_sum": 39.749229800188914,
+          "known_api_latency_seconds_sum": 39.749229800188914
+        }
+      },
+      "api_calls": 40,
+      "input_tokens": 30821,
+      "known_input_tokens_sum": 30821,
+      "input_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "output_tokens": 2649,
+      "known_output_tokens_sum": 2649,
+      "output_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "total_tokens": 33470,
+      "known_total_tokens_sum": 33470,
+      "total_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reasoning_tokens": 0,
+      "known_reasoning_tokens_sum": 0,
+      "reasoning_tokens_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "reported_cost_usd": 0.00207085,
+      "known_reported_cost_usd_sum": 0.00207085,
+      "reported_cost_usd_availability": {
+        "reported_calls": 40,
+        "total_calls": 40,
+        "missing_calls": 0,
+        "fraction": 1.0
+      },
+      "retry_count": 0,
+      "format_failure_count": 0,
+      "failed_attempt_count": 0,
+      "error_types": {},
+      "api_latency_seconds_sum": 39.749229800188914,
+      "known_api_latency_seconds_sum": 39.749229800188914,
+      "retry_decision_rate": 0.0
+    }
+  }
+]

@@ -1,0 +1,2 @@
+# Preserve the archived runtime bytes and SHA-256 values on every OS.
+* -text

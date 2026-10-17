@@ -1,0 +1,26 @@
+{
+  "baseline": "기존",
+  "seeds": [101, 102, 103],
+  "variants": {
+    "기존": {
+      "101": ["../results/main_seed101"],
+      "102": ["../results/main_seed102"],
+      "103": ["../results/main_seed103"]
+    },
+    "안전재고10": {
+      "101": ["../results/ss10_full_seed101"],
+      "102": ["../results/core_ss10_s102", "../results/rest_ss10_s102"],
+      "103": ["../results/core_ss10_s103", "../results/rest_ss10_s103"]
+    },
+    "Q_base문장": {
+      "101": ["../results/qmean_ss0_seed101"],
+      "102": ["../results/core_qmean_s102", "../results/rest_qmean_s102"],
+      "103": ["../results/core_qmean_s103", "../results/rest_qmean_s103"]
+    },
+    "혼합": {
+      "101": ["../results/both_ss10_seed101"],
+      "102": ["../results/core_both_s102", "../results/rest_both_s102"],
+      "103": ["../results/core_both_s103", "../results/rest_both_s103"]
+    }
+  }
+}
